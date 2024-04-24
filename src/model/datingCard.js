@@ -1,9 +1,6 @@
 import mongoose from "mongoose";
 
 const datingSchema = new mongoose.Schema({
-    datingId:{
-        type:Number
-    },
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user"

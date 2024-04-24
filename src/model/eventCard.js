@@ -1,9 +1,6 @@
 import mongoose from "mongoose";
 
 const eventSchema = new mongoose.Schema({
-    eventId:{
-        type:Number
-    },
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user"
@@ -39,7 +36,7 @@ const eventSchema = new mongoose.Schema({
         require:true
     },
     eventAbout:{
-        type: Text,
+        type: String,
         trim: true,
     },
     eventInstagramLink:{

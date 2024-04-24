@@ -1,9 +1,6 @@
 import mongoose from "mongoose";
 
 const businessSchema = new mongoose.Schema({
-    businessId:{
-        type:Number
-    },
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user"
@@ -55,7 +52,7 @@ const businessSchema = new mongoose.Schema({
         trim:true
     },
     businessAbout:{
-        type:Text,
+        type:String,
         trim:true
     },
     businessInstagramLink:{
